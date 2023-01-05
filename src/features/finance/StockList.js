@@ -1,4 +1,3 @@
-/* eslint-disable consistent-return */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
@@ -25,7 +24,6 @@ const FoodNameList = (props) => {
   if (foodDataStatus === 'pending') {
     content = <Spinner text="Loading..." />;
   } else if (foodDataStatus === 'success') {
-    // eslint-disable-next-line array-callback-return
     content = foodData.map((foodItem) => (
       <div key={foodItem.id}>
         <img src={foodItem.thumbnail_url} alt={foodItem.name} width={400} />
@@ -37,7 +35,6 @@ const FoodNameList = (props) => {
   } else if (foodDataStatus === 'rejected') {
     content = <div>{error}</div>;
   }
-  console.log(content);
   return (
     <div>
       <h2>Welcome to your finance app</h2>
@@ -45,4 +42,5 @@ const FoodNameList = (props) => {
     </div>
   );
 };
+
 export default FoodNameList;

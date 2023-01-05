@@ -1,4 +1,3 @@
-/* eslint-disable array-callback-return */
 import { useState } from 'react';
 import FoodNameList from './StockList';
 

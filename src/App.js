@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-// import StockList from './features/finance/StockList';
 import './App.css';
 import StockDetail from './features/finance/SingleStockPage';
 import SearchMeal from './features/finance/SearchField';

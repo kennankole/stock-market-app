@@ -9,14 +9,6 @@ const initialState = {
   error: null,
 };
 
-const optionsOne = {
-  method: 'GET',
-  headers: {
-    'X-RapidAPI-Key': '66cdad9cd8msh9258ed8913c4fe3p1203dcjsne5071f0c13be',
-    'X-RapidAPI-Host': 'tasty.p.rapidapi.com',
-  },
-};
-
 const options = {
   method: 'GET',
   headers: {
@@ -25,16 +17,10 @@ const options = {
   },
 };
 
-export const getStocks = () => {
-  fetch(BASE_URL, options)
-    .then((response) => response.json())
-    .then((response) => (response));
-};
-
 export const fetchStocksData = createAsyncThunk(
   'stocks/fetchStock',
   async () => {
-    const response = await fetch(BASE_URL, optionsOne);
+    const response = await fetch(BASE_URL, options);
     const results = await response.json();
     return results;
   },
@@ -60,9 +46,6 @@ const stocksSlice = createSlice({
   },
 });
 
-// export const { fetchStocksData } = stocksSlice.actions;
 export default stocksSlice.reducer;
-
-export const selectFoodById = (state, foodId) => Object.entries(state.stocks).map((foodItem) => (
-  foodItem[1].find((food) => food.id === Number(foodId))
-));
+export const selectFoodById = (state, foodId) => (
+  state.stocks.foodData).find((food) => food.id === Number(foodId));

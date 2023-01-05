@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
 import React from 'react';
 
 const Spinner = ({ text = '', size = '5em' }) => {
@@ -9,5 +9,14 @@ const Spinner = ({ text = '', size = '5em' }) => {
       <div className="loader" style={{ height: size, width: size }} />
     </div>
   );
+};
+
+Spinner.defaultProps = {
+  text: '',
+  size: '',
+};
+Spinner.propTypes = {
+  text: PropTypes.string,
+  size: PropTypes.string,
 };
 export default Spinner;
