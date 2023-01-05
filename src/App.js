@@ -1,18 +1,17 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import StockList from './features/finance/StockList';
-import StockDetail from './features/finance/StockDetail';
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+// import StockList from './features/finance/StockList';
 import './App.css';
+import StockDetail from './features/finance/SingleStockPage';
+import SearchMeal from './features/finance/SearchField';
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element={<StockList />} />
-        <Route path="detail" element={<StockDetail />} />
+        <Route path="/" element={<SearchMeal />} />
+        <Route exact path="/stocks/:stocksId" element={<StockDetail />} />
       </Routes>
-    </div>
+    </BrowserRouter>
   );
 }
 export default App;
