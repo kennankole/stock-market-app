@@ -110,7 +110,7 @@ can query about their favorite vegan meal and get tips on how to cook it
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://vegan-meals.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
