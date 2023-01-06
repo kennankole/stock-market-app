@@ -7,8 +7,8 @@ import store from '../app/store';
 import FoodNameList from '../features/finance/FoodList';
 
 afterEach(cleanup);
-describe('Test the Stocklist component', () => {
-  it('Should be able to render the Stocklist component', () => {
+describe('Test the FoodNameList component', () => {
+  it('Should be able to render the FoodNameList component', () => {
     const domTree = render(
       <Provider store={store}>
         <BrowserRouter>

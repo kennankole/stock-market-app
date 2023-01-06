@@ -139,7 +139,6 @@ Clone this repository to your desired folder:
   git clone git@github.com:myaccount/my-project.git
 ```
 
-
 ### Install
 
 Install this project with:
@@ -226,7 +225,10 @@ If you like this project kindly give it a star
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank...[Tasty API](https://rapidapi.com/apidojo/api/tasty/) for providing the data
+I would like to thank the following parties for inspiring this codebase 
+
+[Tasty API](https://rapidapi.com/apidojo/api/tasty/) for providing the data
+[Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for inspiring the UI design
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -249,6 +251,6 @@ I would like to thank...[Tasty API](https://rapidapi.com/apidojo/api/tasty/) for
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use  image online[any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

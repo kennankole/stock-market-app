@@ -1,19 +1,17 @@
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
 import { TailSpin } from 'react-loader-spinner';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
-const FoodNameList = (props) => {
+const FoodNameList = ({ query }) => {
   const mealsData = useSelector((state) => state.meals);
   const foodDataStatus = useSelector((state) => state.meals.status);
   const error = useSelector((state) => state.meals.error);
-
   const foodData = mealsData.foodData.filter((food) => {
-    if (props.input === '') {
+    if (query === '') {
       return food;
-    } if (food.name.toLowerCase() === props.input.toLowerCase()
-     || food.name.toLowerCase().includes(props.input.toLowerCase())) {
+    } if (food.name.toLowerCase() === query
+     || food.name.toLowerCase().includes(query)) {
       return food.name;
     }
     return null;
@@ -56,6 +54,14 @@ const FoodNameList = (props) => {
       </div>
     </div>
   );
+};
+
+FoodNameList.defaultProps = {
+  query: '',
+};
+
+FoodNameList.propTypes = {
+  query: PropTypes.string,
 };
 
 export default FoodNameList;

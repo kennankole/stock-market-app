@@ -22,7 +22,7 @@ const SearchMeal = () => {
           onChange={handleInputChange}
         />
       </div>
-      <FoodNameList input={inputText} />
+      <FoodNameList query={inputText.toLocaleLowerCase()} />
     </section>
   );
 };

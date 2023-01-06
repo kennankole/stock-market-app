@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const BASE_URL = 'https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&tags=under_30_minutes';
@@ -33,15 +32,18 @@ const mealSlice = createSlice({
   extraReducers(builder) {
     builder
       .addCase(fetchMeals.fulfilled, (state, action) => {
-        state.status = 'success';
-        state.foodData.push(...action.payload.results);
+        const states = state;
+        states.status = 'success';
+        states.foodData.push(...action.payload.results);
       })
       .addCase(fetchMeals.rejected, (state, action) => {
-        state.status = 'rejected';
-        state.error = action.error.message;
+        const states = state;
+        states.status = 'rejected';
+        states.error = action.error.message;
       })
       .addCase(fetchMeals.pending, (state) => {
-        state.status = 'pending';
+        const states = state;
+        states.status = 'pending';
       });
   },
 });

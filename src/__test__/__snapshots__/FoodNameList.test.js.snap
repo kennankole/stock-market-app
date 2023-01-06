@@ -1,27 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test the Detail component Should be able to render correctly the Detail view 1`] = `
+exports[`Test the FoodNameList component Should be able to render the FoodNameList component 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <section
-        class="food-error"
+      <div
+        class="main-section"
       >
-        <h2>
-          Food Item Details not found!
-        </h2>
-      </section>
+        <div
+          class="inner-section"
+        />
+      </div>
     </div>
   </body>,
   "container": <div>
-    <section
-      class="food-error"
+    <div
+      class="main-section"
     >
-      <h2>
-        Food Item Details not found!
-      </h2>
-    </section>
+      <div
+        class="inner-section"
+      />
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
