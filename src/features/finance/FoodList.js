@@ -51,7 +51,9 @@ const FoodNameList = (props) => {
   }
   return (
     <div className="main-section">
-      { content }
+      <div className="inner-section">
+        { content }
+      </div>
     </div>
   );
 };

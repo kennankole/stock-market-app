@@ -1,33 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   font-family: 'Dosis', sans-serif;
 }
+
 body {
   background-color: #f2f2f2;
 }
+
 #root {
   display: flex;
   justify-content: center;
 }
 
 .image-container {
-  padding: 2%;
-  margin: 2% 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
+  width: 20%;
+  height: 20%;
   text-transform: none;
   font-weight: 600;
   font-size: 18px;
+  text-align: center;
+  padding: 2%;
 }
+
+.inner-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 img {
   border-radius: 10px;
   box-shadow: 0 0 50px #737373;
   transition: 1s ease;
-  width: 50%;
-  /* height: 50%; */
+  height: 100%;
+  width: 100%;
 }
 
 img:hover {
@@ -36,20 +47,11 @@ img:hover {
   transform: scale(0.9);
   transition: 1s ease;
 }
-.main-section{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: #d9d9d9;
-  box-shadow: 0 0 50px #808080;
-  border-radius: 10px;
-  margin: 3%;
-}
 
 .meal-section {
   display: flex;
   justify-content: center;
-  padding: 2%;
+  padding: 1%;
 }
 
 input {
@@ -58,6 +60,13 @@ input {
 }
 
 /* Detail Page view */
+.food-error {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
 .food-detail {
   padding: 3%;
   background-color: #d9d9d9;
@@ -73,13 +82,16 @@ input {
 .food-description {
   line-height: 35px;
 }
+
 .recipe {
   margin: 2% 0;
 }
+
 li {
   list-style-type: none;
   padding: 0.5% 0;
 }
+
 a {
   text-decoration: none;
   color: black;
@@ -87,5 +99,33 @@ a {
 
 .site-title {
   text-align: center;
-  padding: 3% 0;
+  padding: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+  .image-container {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .image-container {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .image-container {
+    width: 30%;
+    height: 30%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .image-container {
+    width: 25%;
+    height: 25%;
+  }
 }

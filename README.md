@@ -60,11 +60,12 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Vegan Foods] <a name="about-project"></a>
 
 > Describe your project in 1 or 2 sentences.
 
-**[your_project__name]** is a...
+**[Vegan Foods]** is an onlne platform where users
+can query about their favorite vegan meal and get tips on how to cook it
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -99,9 +100,7 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Search meals and read about them]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -131,7 +130,7 @@ In order to run this project you need:
 Example command:
 
 ```sh
- gem install rails
+ npm install
 ```
  -->
 
@@ -157,7 +156,7 @@ Example command:
 
 ```sh
   cd my-project
-  gem install
+  npm install
 ```
 --->
 
@@ -169,7 +168,7 @@ To run the project, execute the following command:
 Example command:
 
 ```sh
-  rails server
+  npm start server
 ```
 --->
 
@@ -181,7 +180,7 @@ To run tests, run the following command:
 Example command:
 
 ```sh
-  bin/rails test test/models/article_test.rb
+  npm test
 ```
 --->
 
@@ -205,17 +204,12 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Author 1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@kennankole](https://github.com/kennankole)
+- Twitter: [@obwombe_kennedy](https://twitter.com/obwombe_kennedy)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kennedyomondi/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -225,9 +219,9 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Meal rating]**
+- [ ] **[Recipe sharing]**
+- [ ] **[Meal sharing]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -247,7 +241,7 @@ Feel free to check the [issues page](../../issues/).
 
 > Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project kindly give it a star
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -257,7 +251,7 @@ If you like this project...
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+I would like to thank...[Tasty API](https://rapidapi.com/apidojo/api/tasty/) for providing the data
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -267,9 +261,9 @@ I would like to thank...
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **[Cloning]**
 
-  - [Answer_1]
+  - [No restriction]
 
 - **[Question_2]**
 

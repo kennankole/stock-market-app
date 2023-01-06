@@ -7,7 +7,7 @@ const MealDetail = () => {
   const data = useSelector((state) => selectFoodById(state, mealsId));
   if (!data) {
     return (
-      <section>
+      <section className="food-error">
         <h2>Food Item Details not found!</h2>
       </section>
     );
