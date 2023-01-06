@@ -12,12 +12,12 @@ const initialState = {
 const options = {
   method: 'GET',
   headers: {
-    'X-RapidAPI-Key': '66cdad9cd8msh9258ed8913c4fe3p1203dcjsne5071f0c13be',
+    'X-RapidAPI-Key': '9da766b5d5msh87a12c25035128ep162c73jsn0dacddd7bdee',
     'X-RapidAPI-Host': 'tasty.p.rapidapi.com',
   },
 };
 
-export const fetchStocksData = createAsyncThunk(
+export const fetchMeals = createAsyncThunk(
   'stocks/fetchStock',
   async () => {
     const response = await fetch(BASE_URL, options);
@@ -26,26 +26,26 @@ export const fetchStocksData = createAsyncThunk(
   },
 );
 
-const stocksSlice = createSlice({
+const mealSlice = createSlice({
   name: 'stocks',
   initialState,
   reducers: {},
   extraReducers(builder) {
     builder
-      .addCase(fetchStocksData.fulfilled, (state, action) => {
+      .addCase(fetchMeals.fulfilled, (state, action) => {
         state.status = 'success';
         state.foodData.push(...action.payload.results);
       })
-      .addCase(fetchStocksData.rejected, (state, action) => {
+      .addCase(fetchMeals.rejected, (state, action) => {
         state.status = 'rejected';
         state.error = action.error.message;
       })
-      .addCase(fetchStocksData.pending, (state) => {
+      .addCase(fetchMeals.pending, (state) => {
         state.status = 'pending';
       });
   },
 });
 
-export default stocksSlice.reducer;
+export default mealSlice.reducer;
 export const selectFoodById = (state, foodId) => (
-  state.stocks.foodData).find((food) => food.id === Number(foodId));
+  state.meals.foodData).find((food) => food.id === Number(foodId));

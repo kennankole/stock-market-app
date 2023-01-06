@@ -1,41 +1,91 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Dosis', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #f2f2f2;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
+#root {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.image-container {
+  padding: 2%;
+  margin: 2% 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-transform: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+img {
+  border-radius: 10px;
+  box-shadow: 0 0 50px #737373;
+  transition: 1s ease;
+  width: 50%;
+  /* height: 50%; */
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
+img:hover {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  transition: 1s ease;
+}
+.main-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #d9d9d9;
+  box-shadow: 0 0 50px #808080;
+  border-radius: 10px;
+  margin: 3%;
+}
 
-  50% {
-    transform: translateY(10px);
-  }
+.meal-section {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
 
-  100% {
-    transform: translateY(0);
-  }
+input {
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+/* Detail Page view */
+.food-detail {
+  padding: 3%;
+  background-color: #d9d9d9;
+  box-shadow: 0 0 50px #808080;
+  border-radius: 10px;
+  margin: 3%;
+}
+
+.food-section {
+  padding: 5%;
+}
+
+.food-description {
+  line-height: 35px;
+}
+.recipe {
+  margin: 2% 0;
+}
+li {
+  list-style-type: none;
+  padding: 0.5% 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.site-title {
+  text-align: center;
+  padding: 3% 0;
 }

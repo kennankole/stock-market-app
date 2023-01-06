@@ -4,12 +4,12 @@ import { createRoot } from 'react-dom/client';
 import store from './app/store';
 import App from './App';
 import './index.css';
-import { fetchStocksData } from './features/finance/StocskSlice';
+import { fetchMeals } from './features/finance/MealSlice';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
 
-store.dispatch(fetchStocksData());
+store.dispatch(fetchMeals());
 root.render(
   <React.StrictMode>
     <Provider store={store}>

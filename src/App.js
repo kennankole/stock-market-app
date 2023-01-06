@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import StockDetail from './features/finance/SingleStockPage';
+import StockDetail from './features/finance/SingleMealPage';
 import SearchMeal from './features/finance/SearchField';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<SearchMeal />} />
-        <Route exact path="/stocks/:stocksId" element={<StockDetail />} />
+        <Route exact path="/meals/:mealsId" element={<StockDetail />} />
       </Routes>
     </BrowserRouter>
   );

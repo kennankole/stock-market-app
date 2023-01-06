@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import stocksReducer from '../features/finance/StocskSlice';
+import mealsReducer from '../features/finance/MealSlice';
 
 export default configureStore({
   reducer: {
-    stocks: stocksReducer,
+    meals: mealsReducer,
   },
 });
