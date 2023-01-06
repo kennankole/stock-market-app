@@ -66,6 +66,7 @@ After you're finished please remove all the comments and instructions!
 
 **[Vegan Foods]** is an onlne platform where users
 can query about their favorite vegan meal and get tips on how to cook it
+
 [Project tour](https://www.loom.com/share/d0c646e851ea4bc499394494818a25ae)
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -127,75 +128,48 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
-Example command:
-
-```sh
- npm install
-```
- -->
+ ```npm install```
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
 ```sh
   cd my-folder
   git clone git@github.com:myaccount/my-project.git
 ```
---->
+
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
-
 ```sh
   cd my-project
   npm install
 ```
---->
-
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
-
 ```sh
   npm start server
 ```
---->
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
-
 ```sh
   npm test
 ```
---->
 
 ### Deployment
 
 You can deploy this project using:
 
-<!--
-Example:
-
-```sh
-
-```
- -->
+```render.com```
+```githubpages```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -266,9 +240,6 @@ I would like to thank...[Tasty API](https://rapidapi.com/apidojo/api/tasty/) for
 
   - [No restriction]
 
-- **[Question_2]**
-
-  - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
